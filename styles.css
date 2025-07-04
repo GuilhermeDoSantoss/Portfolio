@@ -208,8 +208,8 @@ nav {
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--white);
@@ -218,6 +218,32 @@ nav {
     transition: transform 0.3s ease;
     animation: scaleIn 1s ease-out;
     position: relative;
+    top: 20px;
+}
+
+/* Telas grandes (desktop) */
+@media (min-width: 1024px) {
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+        top: 40px;
+    }
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 100px) and (max-width: 1024px) {
+    .profile-photo {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* Telas pequenas (smartphones) */
+@media (max-width: 50px) {
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+    }
 }
 
 @keyframes scaleIn {
@@ -362,7 +388,7 @@ nav {
 
 .cta-button::before {
     content: '';
-    position: absolute;
+    position: relative;
     top: 0;
     left: -100%;
     width: 100%;
@@ -1290,3 +1316,79 @@ footer {
         margin-bottom: 1.5rem;
     }
 } 
+
+/* WhatsApp Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  background: #128c7e;
+}
+
+.pulse-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #25d366;
+  border-radius: 50%;
+  animation: ping 2s infinite;
+  opacity: 0.2;
+}
+
+.pulse-ring-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #25d366;
+  border-radius: 50%;
+  animation: ping 2s infinite;
+  animation-delay: 0.5s;
+  opacity: 0.3;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  background: #111827;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  border: 4px solid transparent;
+  border-top-color: #111827;
+}
+
+.whatsapp-button:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}

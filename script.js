@@ -290,3 +290,11 @@ document.querySelectorAll('.section-title').forEach(title => {
 document.addEventListener('DOMContentLoaded', () => {
     animateSectionTitles();
 }); 
+
+// WhatsApp functions
+function openWhatsApp() {
+  const phoneNumber = "5521990459497";
+  const message = "Olá Guilherme, gostei do seu portfólio, podemos conversar!?."
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+  window.open(url, "_blank")
+}
