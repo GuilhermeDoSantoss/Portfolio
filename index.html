@@ -1,459 +1,424 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Guilherme</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Guilherme dos Santos — Software Engineer  em Java, Spring Boot, microsserviços e arquitetura backend escalável." />
+  <meta name="keywords" content="Java Developer, Spring Boot, Backend Engineer, Microsserviços, API REST, Docker, AWS, Kafka" />
+  <meta name="author" content="Guilherme dos Santos" />
+  <meta property="og:title" content="Guilherme dos Santos — Backend Software Engineer" />
+  <meta property="og:description" content="Engenheiro de software em Java, Spring Boot e arquitetura de sistemas distribuídos." />
+  <meta property="og:type" content="website" />
+  <title>Guilherme dos Santos — Software Engineer</title>
+
+  <!-- Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Portfólio</div>
-            <div class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="profile-photo">
-                <img src="img/minha-foto.jpg" alt="Foto de Guilherme">
-            </div>
-            <h1>Welcome, I am <span class="highlight">Guilherme dos Santos</span></h1>
-            <p class="subtitle">Software Engineer | Java | Angular | Fullstack</p>
-            <div class="hero-tags">
-                <span>Clean Code</span>
-                <span>Clean Architecture</span>
-                <span>SOLID</span>
-            </div>
-            <a href="#contact" class="cta-button">Start Conversation</a>
+  <!-- ==================== NAV ==================== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">GS<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#stack" class="nav-link">Stack</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener" class="nav-cta">
+            Hire Me <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-inner">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Disponível para oportunidades
+      </div>
+      <h1 class="hero-title reveal">
+        Software<br />
+        <em>Engineer</em><br />
+        <span class="hero-name">Guilherme<br class="mobile-only"/> dos Santos</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Backend em Java · Spring Boot · Microsserviços · Arquitetura Distribuída
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contact" class="btn btn-ghost">Entrar em Contato</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num">2<span class="accent">+</span></span>
+          <span class="stat-label">Anos de<br/>experiência</span>
         </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2 class="section-title" data-aos="fade-up">
-            <span class="title-wrapper">About Me</span>
-        </h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p class="fade-in">I am Guilherme dos Santos Mendonça Enéas, a Software Engineer focused on backend development in Java and distributed systems architecture. I have over 2 years of hands-on experience building RESTful APIs, microservices, and scalable solutions, applying Clean Code, SOLID, DDD, and TDD in real-world projects.</p>
-                
-                <p class="fade-in">My journey includes freelance work on Workana and the development of applications across different sectors (education, sports, aesthetics), with emphasis on internal communication systems with email sending, task scheduling, and automated notifications, as well as well-documented APIs, tested and integrated into CI/CD pipelines with Docker.</p>
-                
-                <p class="fade-in">I have solid experience with Java, Spring Boot, Kafka, RabbitMQ, MongoDB, PostgreSQL, Docker, GitHub Actions, and automated testing (JUnit5/Mockito). My workflow is always driven by engineering best practices, modern architectural patterns, and a focus on delivering value.</p>
-                
-                <p class="fade-in">I am currently in the final year of my degree in Systems Analysis and Development at UniCesumar, and I am preparing for a postgraduate program in Software Architecture and possibly a master's degree in Computer Science.</p>
-
-                <p class="fade-in">At the same time, I am expanding my stack by studying Kotlin and Go, and deepening my knowledge in Cloud Computing (AWS/Azure/Google Cloud), DevOps, and AI.</p>
-
-                <p class="fade-in">My goal is to take on strategic roles such as Java Backend Developer or Fullstack Developer, contributing to high-impact projects involving architecture, cloud, and distributed systems always in agile, collaborative environments committed to technical excellence.</p>
-
-                <div class="skills-container">
-                    <div class="technical-skills">
-                        <h2 class="section-title" data-aos="fade-up">
-                            <span class="title-wrapper">Technologies & Tools</span>
-                        </h2>
-                        <div class="skill-tags">
-                            <!-- Principais Competências -->
-                            <span >Clean Code</span>
-                            <span >Clean Architecture</span>
-                            <span>SOLID</span>
-                            <span>Java Backend Developer</span>
-                            <span>Software Architecture</span>
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            
-                            <!-- Testes e Qualidade -->
-                            <span>Automated Testing</span>
-                            <span>JUnit5</span>
-                            
-                            <!-- DevOps e Ferramentas -->
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>AWS</span>
-                            <span>Docker</span>
-                            <span>CI/CD</span>
-                            
-                            <!-- Banco de Dados e Mensageria -->
-                            <span>MongoDB</span>
-                            <span>Kafka</span>
-                            <span>RabbitMQ</span>
-                            
-                            <!-- Arquitetura e Padrões -->
-                            <span>Microservices</span>
-                            <span>RESTful API</span>
-                            
-                            <!-- Metodologias -->
-                            <span>Scrum</span>
-                            <span>Kanban</span>
-                            
-                            <!-- Frontend -->
-                            <span>Angular</span>
-                            <span>JavaScript</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                        </div>
-                    </div>
-
-                    <div class="soft-skills">
-                        <h2 class="section-title" data-aos="fade-up">
-                            <span class="title-wrapper">Behavioral Skills</span>
-                        </h2>
-                        <div class="soft-skills-grid">
-                            <!-- Proatividade -->
-                            <div class="soft-skill-card" data-aos="fade-up">
-                                <div class="skill-icon">
-                                    <i class="fas fa-rocket"></i>
-                                </div>
-                                <div class="skill-content">
-                                    <h4>Proactivity</h4>
-                                    <p>Initiative to identify and resolve problems before they become critical, while supporting the development team as needed.</p>
-                                    <div class="skill-level">
-                                        <div class="level-bar" style="width: 95%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pontualidade -->
-                            <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="100">
-                                <div class="skill-icon">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <div class="skill-content">
-                                    <h4>Punctuality</h4>
-                                    <p>Commitment to delivery deadlines and efficient time management.</p>
-                                    <div class="skill-level">
-                                        <div class="level-bar" style="width: 98%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Comunicação -->
-                            <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="skill-icon">
-                                    <i class="fas fa-comments"></i>
-                                </div>
-                                <div class="skill-content">
-                                    <h4>Effective Communication</h4>
-                                    <p>Ability to convey technical ideas clearly and objectively.</p>
-                                    <div class="skill-level">
-                                        <div class="level-bar" style="width: 92%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Visão de Produto -->
-                            <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="300">
-                                <div class="skill-icon">
-                                    <i class="fas fa-lightbulb"></i>
-                                </div>
-                                <div class="skill-content">
-                                    <h4>Product Vision</h4>
-                                    <p>Focus on delivering value to the end user and alignment with business goals.</p>
-                                    <div class="skill-level">
-                                        <div class="level-bar" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Organização -->
-                            <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="400">
-                                <div class="skill-icon">
-                                    <i class="fas fa-tasks"></i>
-                                </div>
-                                <div class="skill-content">
-                                    <h4>Organization</h4>
-                                    <p>Excellent task management and project documentation.</p>
-                                    <div class="skill-level">
-                                        <div class="level-bar" style="width: 94%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Aprendizagem Rápida -->
-                            <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="500">
-                                <div class="skill-icon">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <div class="skill-content">
-                                    <h4>Fast Learning</h4>
-                                    <p>Ability to quickly absorb and apply new technologies and concepts, ensuring continuous growth.</p>
-                                    <div class="skill-level">
-                                        <div class="level-bar" style="width: 96%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Aprendizagem Contínua -->
-                            <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="600">
-                                <div class="skill-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="skill-content">
-                                    <h4>Continuous Learning</h4>
-                                    <p>Ongoing pursuit of knowledge, improvement, and professional development.</p>
-                                    <div class="skill-level">
-                                        <div class="level-bar" style="width: 97%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Entrega de Valor -->
-                            <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="700">
-                                <div class="skill-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="skill-content">
-                                    <h4>Results-Oriented</h4>
-                                    <p>Commitment to delivering high-quality work with strong business impact.</p>
-                                    <div class="skill-level">
-                                        <div class="level-bar" style="width: 93%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">10<span class="accent">+</span></span>
+          <span class="stat-label">Projetos<br/>entregues</span>
         </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Personal Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>E-commerce Project</h3>
-                <p>Full e-commerce system with shopping cart and multiple payment options.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>JavaScript</span>
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/ProjetoEcommerce" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Investment Scheduler</h3>
-                <p>This project is a RESTful API developed with Java 21, Spring Boot, and MySQL. The goal is to build the backend of an Investment Aggregator, featuring full CRUD operations, unit tests, and entity relationships.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>SpringBoot</span>
-                    <span>MySQL</span>
-                    <span>OpenFeign</span>
-                    <span>JUnit5</span>
-                    <span>Mockito</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/agregrador.investimentos" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            
-            <div class="project-card">
-                <h3>Task Scheduler with Notifications</h3>
-                <p>REST API for task scheduling and notifications with automatic status handling and email delivery.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>MongoDB</span>
-                    <span>Docker</span>
-                    <span>CI/CD</span>
-                    <span>API REST</span>
-                    <span>Kafka</span>
-                    <span>Postman</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/agendador-tarefas" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            
-            <div class="project-card">
-                <h3>Project and Demand Management System</h3>
-                <p>Developed a RESTful API in Java 17 and Spring Boot 3+ for project and task management, with a focus on security, code quality, and engineering best practices. Implemented JWT authentication, DTO↔Entity mapping with MapStruct, automated tests (unit and integration), Swagger/OpenAPI, Docker support, and global exception handling with robust validations and clean code.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>JUnit5</span>
-                    <span>SpringBoot</span>
-                    <span>JWT</span>
-                    <span>MapStruct</span>
-                    <span>Swagger/OpenAPI</span>
-                    <span>Docker e Docker-Compose</span>
-                    <span>Bean Validation</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/Sistema.de.Gestao.de.Projetos.e.Demandas" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            
-            <div class="project-card">
-                <h3>Hexagonal Architecture</h3>
-                <p>REST API implementation following Hexagonal Architecture (Ports and Adapters), prioritizing decoupling and testability.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>Clean Architecture</span>
-                    <span>DDD</span>
-                    <span>TDD</span>
-                    <span>Docker</span>
-                    <span>JUnit</span>
-                    <span>Mockito</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/projecthexagonal" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            
-            <div class="project-card">
-                <h3>Data Structures</h3>
-                <p>A complete and progressive guide covering fundamentals, advanced structures, and practical algorithms. Ideal for students, developers, and technical interview preparation.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>Spring</span>
-                    <span>Maven</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/EstruturaDeDados" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            
-            <div class="project-card">
-                <h3>Enhancements to Existing Project</h3>
-                <p>A RESTful API built in Java using Spring Boot, designed to manage internal communication messages with integrated email notification support. Includes full documentation, DTO–Entity mapping, exception handling, Docker support, and unit tests.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>Spring</span>
-                    <span>Maven</span>
-                    <span>Spring Data JPA</span>
-                    <span>OpenAPI/Swagger</span>
-                    <span>MapStruct</span>
-                    <span>Docker</span>
-                    <span>JUnit 5</span>
-                    <span>Mockito</span>
-                    <span>REST Template</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/Melhorias.Projeto.Existente" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-
-                <div class="project-card">
-                <h3>Crypto Bitcoin Website</h3>
-                <p>An elegant and modern Bitcoin-themed landing page built with HTML, CSS, and JavaScript. This project showcases advanced animations, impactful visual effects, and a futuristic design that highlights the concept of Bitcoin.</p>
-                <div class="tech-stack">
-                    <span>HTML5</span>
-                    <span>CSS</span>
-                    <span>JavaScript (ES6+)</span>
-                    <span>Particles.js</span>
-                    <span>GSAP (GreenSock Animation Platform)</span>
-                </div>
-                <a href="https://crypto-guilherme.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-                </div>
-
-                <div class="project-card">
-                <h3>Java Streams</h3>
-                <p>This project demonstrates the use of Java Streams API to work with collections in a more declarative, immutable, and readable way. It leverages operations like filter, map, collect, and others to build clear and efficient data pipelines.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>Spring</span>
-                    <span>Maven</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/Streams" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Educational Management System - EduConnect</h3>
-                <p>An academic project developed in Java as part of the Object-Oriented Programming course. It simulates a complete system for managing students, teachers, courses, classes, assessments, and reports in educational institutions.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>Object-Oriented Programming</span>
-                    <span>Maven</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/Sistema-de-Gestao-Educacional" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Portfólio Personal Trainer Gabriel Venancio</h3>
-                <p>A portfolio website developed for a Physical Education professional graduated in 2023, with postgraduate studies in Biomechanics and Sports Nutrition, and experience as a bodybuilding athlete. The site presents his background, specialties, and services in a professional and engaging format.</p>
-                <div class="tech-stack">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                </div>
-                <a href="https://personal-gabriel.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Portfólio Sports Agent</h3>
-                <p>An institutional website created for a sports entrepreneur in the football industry, showcasing his career, market presence, and the players he represents.</p>
-                <div class="tech-stack">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                </div>
-                <a href="https://insidefootbal.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Portfólio Professor Rafaela Leal </h3>
-                <p>A simple, responsive institutional website developed for a Physical Education teacher to present her services, specialties, biography, health tips, and contact information.</p>
-                <div class="tech-stack">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                </div>
-                <a href="https://personalrafaela.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Tanning Appointment Website</h3>
-                <p>A simple website that allows clients to schedule a tanning session. The site also includes a section with information about the tanning procedure.</p>
-                <div class="tech-stack">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                </div>
-                <a href="https://encantodasereia.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Java Regex</h3>
-                <p>This project demonstrates the use of regular expressions (Regex) in Java for validation, pattern matching, and string replacement using the Pattern and Matcher classes.</p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                    <span>Maven</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/java.regex" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>SQL Order System</h3>
-                <p>This project consists of creating a relational database for a small store’s order management system. The structure follows modeling best practices, proper use of data types, primary and foreign keys, and well-defined relationships between tables.</p>
-                <div class="tech-stack">
-                    <span>MySQL</span>
-                    <span>PostegreSQL</span>
-                </div>
-                <a href="https://github.com/GuilhermeDoSantoss/sistema-pedidos-sql" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5<span class="accent">+</span></span>
+          <span class="stat-label">Stacks<br/>dominadas</span>
         </div>
-            <div class="contact-info">
-                <div class="social-links">
-                    <a href="https://github.com/GuilhermeDoSantoss" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Guilherme dos Santos | Software Engineer. All rights reserved.</p>
-    </footer>
-
-     <!-- WhatsApp Button -->
-    <div class="whatsapp-button animate-bounce-gentle" onclick="openWhatsApp()">
-        <i class="fab fa-whatsapp"></i>
-        <div class="pulse-ring"></div>
-        <div class="pulse-ring-2"></div>
-        <div class="tooltip">Shall we talk!?</div>
+      </div>
     </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-left">
+          <div class="section-label reveal">01 — Sobre</div>
+          <h2 class="section-title reveal">
+            Construindo<br/>sistemas que<br/><em>escalam.</em>
+          </h2>
+          <div class="photo-frame reveal">
+            <img src="img/minha-foto.jpg" alt="Guilherme dos Santos" loading="lazy" />
+            <div class="photo-accent"></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-lead reveal">
+            Engenheiro de software com foco em desenvolvimento backend em Java e Spring Boot, atuando na criação de APIs REST escaláveis e microsserviços com ênfase em performance, segurança e boas práticas de arquitetura.
+          </p>
+          <p class="about-body reveal">
+            Tenho experiência com bancos relacionais e não relacionais, integração de mensageria com Kafka e RabbitMQ, e processos de CI/CD em ambientes Docker e AWS. Trabalho com mentalidade de engenharia pensando em escalabilidade, qualidade de código, automação e arquitetura moderna.
+          </p>
+          <p class="about-body reveal">
+            Aplico consistentemente TDD, Clean Code, SOLID e DDD nos projetos em que atuo. Atualmente cursando Análise e Desenvolvimento de Sistemas na UniCesumar e me preparando para pós-graduação em Arquitetura de Software na FIAP.
+          </p>
+          <div class="about-highlights reveal">
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <strong>ADS — UniCesumar</strong>
+                <span>Análise e Desenvolvimento de Sistemas</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <strong>Freelance — Workana</strong>
+                <span>Sistemas web, APIs e automações</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Rio de Janeiro, BR</strong>
+                <span>Remoto | Híbrido | Presencial · Disponível</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener" class="btn btn-primary reveal">
+            Ver LinkedIn <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- ==================== STACK ==================== -->
+  <section id="stack" class="section stack-section">
+    <div class="container">
+      <div class="section-label reveal">02 — Stack</div>
+      <h2 class="section-title reveal">Tecnologias & <em>Ferramentas</em></h2>
+      <p class="section-sub reveal">
+        Ferramentas com as quais entrego sistemas robustos, testados e prontos para produção.
+      </p>
+
+      <div class="stack-grid">
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title"><i class="fas fa-server"></i> Backend Core</h3>
+          <div class="stack-items">
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><span>Java</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" /><span>Spring Boot</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven" /><span>Maven</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-plug"></i><span>REST APIs</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-cubes"></i><span>Microsserviços</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title"><i class="fas fa-database"></i> Banco de Dados</h3>
+          <div class="stack-items">
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" /><span>PostgreSQL</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" /><span>MongoDB</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /><span>MySQL</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" /><span>Redis</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title"><i class="fas fa-exchange-alt"></i> Mensageria</h3>
+          <div class="stack-items">
+            <div class="stack-item icon-text"><i class="fas fa-bolt"></i><span>Apache Kafka</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-rabbit"></i><span>RabbitMQ</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title"><i class="fas fa-cloud"></i> DevOps & Cloud</h3>
+          <div class="stack-items">
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" /><span>Docker</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" /><span>AWS</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /><span>GitHub Actions</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-infinity"></i><span>CI/CD</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title"><i class="fas fa-vial"></i> Qualidade & Testes</h3>
+          <div class="stack-items">
+            <div class="stack-item icon-text"><i class="fas fa-flask"></i><span>JUnit 5</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-mask"></i><span>Mockito</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-check-double"></i><span>TDD</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-sitemap"></i><span>Clean Code</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-layer-group"></i><span>SOLID / DDD</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title"><i class="fas fa-code"></i> Frontend</h3>
+          <div class="stack-items">
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" /><span>Angular</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" /><span>TypeScript</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><span>JavaScript</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-label reveal">03 — Projetos</div>
+      <h2 class="section-title reveal">Trabalho <em>selecionado</em></h2>
+      <p class="section-sub reveal">
+        Projetos que demonstram capacidade técnica e entrega real de valor.
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- Featured -->
+        <article class="project-card project-featured reveal">
+          <div class="project-meta">
+            <span class="project-tag">Backend · Java</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Salutar — Sistema de Gestão para Clínica de Fisioterapia</h3>
+          <p class="project-desc">
+            Sistema completo de gestão para a Clínica Salutar (Dr. Renato), eliminando registros físicos e centralizando exames, laudos e histórico de pacientes. Arquitetura REST com autenticação JWT, upload de documentos e pipeline CI/CD.
+          </p>
+          <div class="project-impact">
+            <span><i class="fas fa-check-circle"></i> Digitalização total do acervo físico</span>
+            <span><i class="fas fa-check-circle"></i> Autenticação segura com JWT + Spring Security</span>
+            <span><i class="fas fa-check-circle"></i> Deploy containerizado via Docker</span>
+          </div>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>JWT</span><span>PostgreSQL</span><span>Docker</span><span>JUnit 5</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/GuilhermeDoSantoss" target="_blank" rel="noopener" class="project-link-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-tag">Backend · Java</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Task Manager API</h3>
+          <p class="project-desc">
+            API REST para registro e gerenciamento de tarefas com DTOs, tratamento global de erros, autenticação por token e pipeline de testes automatizados.
+          </p>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>JUnit 5</span><span>Mockito</span><span>Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/GuilhermeDoSantoss/Melhorias.Projeto.Existente" target="_blank" rel="noopener" class="project-link-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-tag">Backend · Java</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">EduConnect — Sistema de Gestão Educacional</h3>
+          <p class="project-desc">
+            Sistema acadêmico para gerenciamento de alunos, professores, turmas, avaliações e relatórios em instituições de ensino. Modelagem orientada a objetos aplicada em domínio real.
+          </p>
+          <div class="project-tech">
+            <span>Java</span><span>OOP</span><span>Maven</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/GuilhermeDoSantoss/Sistema-de-Gestao-Educacional" target="_blank" rel="noopener" class="project-link-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-tag">Frontend · JS</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Crypto Bitcoin Website</h3>
+          <p class="project-desc">
+            Landing page temática com animações avançadas, efeitos visuais impactantes e design futurista. Demonstração de domínio em JavaScript ES6+, GSAP e Particles.js.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GSAP</span><span>Particles.js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://crypto-guilherme.netlify.app/" target="_blank" rel="noopener" class="project-link-btn">
+              <i class="fas fa-external-link-alt"></i> Demo
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-tag">Freelance · Web</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-title">Portfólio — Personal Trainer Gabriel Venancio</h3>
+          <p class="project-desc">
+            Site profissional para profissional de Educação Física, pós-graduado em Biomecânica e Nutrição Esportiva. Apresenta serviços, especialidades e formação em formato engajador.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://personal-gabriel.vercel.app/" target="_blank" rel="noopener" class="project-link-btn">
+              <i class="fas fa-external-link-alt"></i> Demo
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-tag">Freelance · Web</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-title">Inside Football — Sports Agent</h3>
+          <p class="project-desc">
+            Site institucional para empreendedor do mercado do futebol. Apresenta carreira, presença no mercado e atletas representados.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://insidefootbal.netlify.app/" target="_blank" rel="noopener" class="project-link-btn">
+              <i class="fas fa-external-link-alt"></i> Demo
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects-cta reveal">
+        <a href="https://github.com/GuilhermeDoSantoss" target="_blank" rel="noopener" class="btn btn-ghost">
+          Ver todos os projetos no GitHub <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-label reveal">04 — Contato</div>
+        <h2 class="contact-title reveal">
+          Vamos construir<br/><em>algo juntos?</em>
+        </h2>
+        <p class="contact-sub reveal">
+          Aberto a oportunidades de backend, fullstack e arquitetura. Respondo em até 24h.
+        </p>
+        <div class="contact-options reveal">
+          <a href="mailto:guilhermedossantoss1999@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>E-mail</strong>
+              <span>guilhermedossantoss1999@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>guilhermedevjava</span>
+            </div>
+          </a>
+          <a href="https://github.com/GuilhermeDoSantoss" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-github"></i>
+            <div>
+              <strong>GitHub</strong>
+              <span>GuilhermeDoSantoss</span>
+            </div>
+          </a>
+        </div>
+        <div class="contact-whatsapp reveal">
+          <button class="btn btn-primary btn-lg" onclick="openWhatsApp()">
+            <i class="fab fa-whatsapp"></i> Iniciar conversa no WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">GS<span class="accent">.</span></span>
+        <p>© 2024 Guilherme dos Santos — Backend Software Engineer</p>
+        <div class="footer-links">
+          <a href="https://github.com/GuilhermeDoSantoss" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <button class="whatsapp-fab" onclick="openWhatsApp()" aria-label="Abrir WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="fab-pulse"></span>
+    <span class="fab-tooltip">Vamos conversar!</span>
+  </button>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
