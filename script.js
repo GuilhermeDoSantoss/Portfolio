@@ -91,7 +91,7 @@ if (heroTitle) {
 // ============= WHATSAPP =============
 function openWhatsApp() {
   const phone   = '5521990459497';
-  const message = 'hello guilherme! I came across your portfolio and would like to discuss a job opportunity with you.';
+  const message = 'olá, guilherme! encontrei seu portfólio e gostaria de conversar sobre uma oportunidade profissional.';
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
 }
 

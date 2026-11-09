@@ -1,21 +1,21 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Guilherme dos Santos — Software Engineer  em Java, Spring Boot, microsserviços e arquitetura backend escalável." />
-  <meta name="keywords" content="Java Developer, Spring Boot, Backend Engineer, Microsserviços, API REST, Docker, AWS, Kafka" />
+  <meta name="description" content="Guilherme dos Santos — engenheiro de software com foco em backend Java, engenharia de produto e inteligência artificial aplicada. APIs REST, sistemas distribuídos e soluções escaláveis." />
+  <meta name="keywords" content="engenheiro de software, backend java, spring boot, engenharia de produto, product engineer, inteligência artificial, llm, microsserviços, api rest, sistemas distribuídos, kafka, docker" />
   <meta name="author" content="Guilherme dos Santos" />
-  <meta property="og:title" content="Guilherme dos Santos — Backend Software Engineer" />
-  <meta property="og:description" content="Engenheiro de software em Java, Spring Boot e arquitetura de sistemas distribuídos." />
+  <meta property="og:title" content="Guilherme dos Santos — engenheiro de software | backend java, produto e ia" />
+  <meta property="og:description" content="Engenharia de software com foco em backend Java, engenharia de produto e inteligência artificial aplicada a produtos digitais." />
   <meta property="og:type" content="website" />
-  <title>guilherme dos santos - software engineer</title>
+  <meta property="og:locale" content="pt_BR" />
+  <title>guilherme dos santos - engenheiro de software | backend java | produto e ia</title>
 
-  <!-- Fonts: Syne (display) + DM Sans (body) -->
+  <!-- Fontes: Plus Jakarta Sans (títulos) + Inter (texto) + JetBrains Mono (elementos técnicos) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -23,19 +23,19 @@
 
   <!-- ==================== NAV ==================== -->
   <header class="site-header" id="site-header">
-    <nav class="nav-container">
+    <nav class="nav-container" aria-label="principal">
       <a href="#home" class="nav-logo">guilherme dos santos<span class="logo-dot">.</span></a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+      <button class="nav-toggle" id="nav-toggle" aria-label="abrir menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about" class="nav-link">about</a></li>
+        <li><a href="#about" class="nav-link">sobre</a></li>
         <li><a href="#stack" class="nav-link">stack</a></li>
-        <li><a href="#projects" class="nav-link">projects</a></li>
-        <li><a href="#contact" class="nav-link">contact</a></li>
+        <li><a href="#projects" class="nav-link">projetos</a></li>
+        <li><a href="#contact" class="nav-link">contato</a></li>
         <li>
           <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener" class="nav-cta">
-            hire me <i class="fas fa-arrow-up-right-from-square"></i>
+            fale comigo <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
@@ -49,33 +49,28 @@
     <div class="hero-inner">
       <div class="hero-badge reveal">
         <span class="badge-dot"></span>
-        available for opportunities
+        disponível para oportunidades
       </div>
       <h1 class="hero-title reveal">
-        software<br />
-        <em>engineer</em><br />
+        product<br />
+        <em>engineer</em>
       </h1>
       <p class="hero-sub reveal">
-        backend java · spring boot ·  microservices · distributed architecture
+        backend java · ai software engineer · ia
       </p>
       <div class="hero-actions reveal">
-        <a href="#projects" class="btn btn-primary">view projects</a>
-        <a href="#contact" class="btn btn-ghost">get in touch</a>
+        <a href="#projects" class="btn btn-primary">ver projetos</a>
+        <a href="#contact" class="btn btn-ghost">entrar em contato</a>
       </div>
       <div class="hero-stats reveal">
         <div class="stat">
-          <span class="stat-num">3<span class="accent">+</span></span>
-          <span class="stat-label">years of<br/>experience</span>
+          <span class="stat-num">4</span>
+          <span class="stat-label">projetos<br/>em destaque</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-num">15<span class="accent">+</span></span>
-          <span class="stat-label">projects<br/>delivered</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">3<span class="accent">+</span></span>
-          <span class="stat-label">core <br/>technologies</span>
+          <span class="stat-num">+3 anos</span>
+          <span class="stat-label"><br/> experiência</span>
         </div>
       </div>
     </div>
@@ -86,47 +81,49 @@
     <div class="container">
       <div class="about-layout">
         <div class="about-left">
-          <div class="section-label reveal">01 - about</div>
+          <div class="section-label reveal">01 - sobre</div>
           <h2 class="section-title reveal">
-            building<br/>systems that<br/><em>scale.</em>
+            engenharia com<br/>visão de<br/><em>produto.</em>
           </h2>
           <div class="photo-frame reveal">
-            <img src="img/eu.jpeg" alt="Guilherme dos Santos" loading="lazy" />
+            <img src="img/eu.jpeg" alt="retrato de guilherme dos santos" loading="lazy" />
             <div class="photo-accent"></div>
           </div>
         </div>
         <div class="about-right">
           <p class="about-lead reveal">
-            software engineer focused on java and spring boot backend development, building scalable rest apis and microservices with a strong emphasis on performance, security, and software architecture best practices.</p>
+            sou engenheiro de software com foco em backend java, engenharia de produto e inteligência artificial. Desenvolvo apis rest, sistemas distribuídos e aplicações escaláveis pensando em quem vai usá-las.</p>
           <p class="about-body reveal">
-            experienced with relational and nosql databases, event-driven integrations using kafka and rabbitmq, and ci/cd pipelines in docker and aws environments. I approach software development with an engineering mindset focused on scalability, code quality, automation, and modern architecture.</p>
+            vou além da implementação: procuro entender o problema de negócio, avaliar alternativas de arquitetura e contribuir para decisões que equilibram valor, segurança, performance, custos e manutenibilidade.</p>
           <p class="about-body reveal">
-            i consistently apply tdd, clean code, solid principles, and domain-driven design (ddd) in my projects. Currently pursuing a degree in systems analysis and development at unicesumar and preparing for a postgraduate specialization in software architecture at fiap.</p>
+            gosto de assumir a responsabilidade do problema até a entrega, trabalhando junto de produto, design e outras áreas: do entendimento dos requisitos às discussões técnicas, code reviews e melhoria contínua.</p>
+          <p class="about-body reveal">
+            também desenvolvo conhecimentos em ia generativa, com agentes, llms, engenharia de prompts, rag e automação, aplicando onde realmente agrega valor ao produto. Atualmente trabalho na bnw.ad como product engineer e ai software engineer, atuando no desenvolvimento de soluções saas b2b com java, spring boot, typescript, node.js e inteligência artificial, integrando apis, dados, agentes de ia e automações comerciais e também atuo voluntariamente na comunidade soujava, que são eventos bimestrais e já palestrei sobre meu projeto pessoal pix simulador com jwt, kafka e idempotência com redis.</p>
           <div class="about-highlights reveal">
             <div class="highlight-item">
-              <i class="fas fa-graduation-cap"></i>
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
               <div>
                 <strong>ads - unicesumar</strong>
-                <span>systems analysis and development</span>
+                <span>análise e desenvolvimento de sistemas · conclusão prevista em dez/2026</span>
               </div>
             </div>
             <div class="highlight-item">
-              <i class="fas fa-briefcase"></i>
+              <i class="fas fa-briefcase" aria-hidden="true"></i>
               <div>
-                <strong>freelance - workana</strong>
-                <span>web systems, apis and automation</span>
+                <strong>bnw.ad</strong>
+                <span>sistemas web, apis e automação</span>
               </div>
             </div>
             <div class="highlight-item">
-              <i class="fas fa-map-marker-alt"></i>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
               <div>
                 <strong>rio de janeiro, br</strong>
-                <span>remote | hybrid | on-site - available</span>
+                <span>remoto | híbrido - disponível</span>
               </div>
             </div>
           </div>
           <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener" class="btn btn-primary reveal">
-            view linkedin <i class="fab fa-linkedin"></i>
+            ver linkedin <i class="fab fa-linkedin" aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -136,69 +133,90 @@
   <!-- ==================== STACK ==================== -->
   <section id="stack" class="section stack-section">
     <div class="container">
-      <div class="section-label reveal">02 - tech stack</div>
-      <h2 class="section-title reveal">technologies & <em>tools</em></h2>
+      <div class="section-label reveal">02 - tecnologias</div>
+      <h2 class="section-title reveal">tecnologias & <em>práticas</em></h2>
       <p class="section-sub reveal">
-        technologies i use to build robust, tested, and production-ready systems.</p>
+        o que uso para construir sistemas robustos, testados e prontos para produção.</p>
 
       <div class="stack-grid">
 
         <div class="stack-group reveal">
-          <h3 class="stack-group-title"><i class="fas fa-server"></i> backend core</h3>
+          <h3 class="stack-group-title"><i class="fas fa-server" aria-hidden="true"></i> backend & arquitetura</h3>
           <div class="stack-items">
-            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><span>java</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><span>java 8–21</span></div>
             <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" /><span>spring boot</span></div>
-            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven" /><span>maven</span></div>
-            <div class="stack-item icon-text"><i class="fas fa-plug"></i><span>rest apis</span></div>
-            <div class="stack-item icon-text"><i class="fas fa-cubes"></i><span>microservices</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-shield-halved" aria-hidden="true"></i><span>spring security</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-plug" aria-hidden="true"></i><span>apis rest</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-key" aria-hidden="true"></i><span>jwt</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-tower-broadcast" aria-hidden="true"></i><span>websocket/stomp</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-cubes" aria-hidden="true"></i><span>microsserviços</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-sitemap" aria-hidden="true"></i><span>clean architecture</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-layer-group" aria-hidden="true"></i><span>ddd | solid</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-repeat" aria-hidden="true"></i><span>idempotência</span></div>
           </div>
         </div>
 
         <div class="stack-group reveal">
-          <h3 class="stack-group-title"><i class="fas fa-database"></i> databases</h3>
+          <h3 class="stack-group-title"><i class="fas fa-database" aria-hidden="true"></i> bancos de dados & mensageria</h3>
           <div class="stack-items">
             <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" /><span>postgresql</span></div>
-            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" /><span>mongodb</span></div>
             <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /><span>mysql</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" /><span>mongodb</span></div>
             <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" /><span>redis</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-bolt" aria-hidden="true"></i><span>apache kafka</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>rabbitmq</span></div>
           </div>
         </div>
 
         <div class="stack-group reveal">
-          <h3 class="stack-group-title"><i class="fas fa-exchange-alt"></i> messaging</h3>
+          <h3 class="stack-group-title"><i class="fas fa-cloud" aria-hidden="true"></i> cloud & devops</h3>
           <div class="stack-items">
-            <div class="stack-item icon-text"><i class="fas fa-bolt"></i><span>apache kafka</span></div>
-            <div class="stack-item icon-text"><i class="fas fa-rabbit"></i><span>rabbitmq</span></div>
-          </div>
-        </div>
-
-        <div class="stack-group reveal">
-          <h3 class="stack-group-title"><i class="fas fa-cloud"></i> devops & cloud</h3>
-          <div class="stack-items">
-            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" /><span>docker</span></div>
             <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" /><span>aws</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" /><span>docker</span></div>
             <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /><span>github actions</span></div>
-            <div class="stack-item icon-text"><i class="fas fa-infinity"></i><span>ci/cd</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-infinity" aria-hidden="true"></i><span>ci/cd</span></div>
+            <div class="stack-item icon-text"><i class="fab fa-git-alt" aria-hidden="true"></i><span>git</span></div>
+            <div class="stack-item icon-text"><i class="fab fa-linux" aria-hidden="true"></i><span>linux</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-cloud-bolt" aria-hidden="true"></i><span>serverless</span></div>
           </div>
         </div>
 
         <div class="stack-group reveal">
-          <h3 class="stack-group-title"><i class="fas fa-vial"></i> quality & testing</h3>
+          <h3 class="stack-group-title"><i class="fas fa-vial" aria-hidden="true"></i> qualidade & boas práticas</h3>
           <div class="stack-items">
-            <div class="stack-item icon-text"><i class="fas fa-flask"></i><span>junit5</span></div>
-            <div class="stack-item icon-text"><i class="fas fa-mask"></i><span>mockito</span></div>
-            <div class="stack-item icon-text"><i class="fas fa-check-double"></i><span>tdd</span></div>
-            <div class="stack-item icon-text"><i class="fas fa-sitemap"></i><span>clean code</span></div>
-            <div class="stack-item icon-text"><i class="fas fa-layer-group"></i><span>solid | ddd</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-flask" aria-hidden="true"></i><span>junit 5</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-mask" aria-hidden="true"></i><span>mockito</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-vial" aria-hidden="true"></i><span>mockmvc</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-check-double" aria-hidden="true"></i><span>tdd</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-code-pull-request" aria-hidden="true"></i><span>code review</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-eye" aria-hidden="true"></i><span>observabilidade</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-list" aria-hidden="true"></i><span>logs estruturados</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-lock" aria-hidden="true"></i><span>autenticação e autorização</span></div>
           </div>
         </div>
 
         <div class="stack-group reveal">
-          <h3 class="stack-group-title"><i class="fas fa-code"></i> frontend</h3>
+          <h3 class="stack-group-title"><i class="fas fa-robot" aria-hidden="true"></i> ia & automação</h3>
           <div class="stack-items">
-            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" /><span>angular</span></div>
-            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" /><span>typescript</span></div>
-            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><span>javascript</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-robot" aria-hidden="true"></i><span>agentes de ia</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-brain" aria-hidden="true"></i><span>llms</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-terminal" aria-hidden="true"></i><span>engenharia de prompts</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-book-open" aria-hidden="true"></i><span>rag</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-screwdriver-wrench" aria-hidden="true"></i><span>tool calling</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-gears" aria-hidden="true"></i><span>automação inteligente</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title"><i class="fas fa-compass" aria-hidden="true"></i> produto & negócio</h3>
+          <div class="stack-items">
+            <div class="stack-item icon-text"><i class="fas fa-compass" aria-hidden="true"></i><span>product thinking</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-magnifying-glass" aria-hidden="true"></i><span>product discovery</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-window-restore" aria-hidden="true"></i><span>saas</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-chart-line" aria-hidden="true"></i><span>product metrics</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-users" aria-hidden="true"></i><span>customer-centric thinking</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-bullseye" aria-hidden="true"></i><span>gtm engineering</span></div>
+            <div class="stack-item icon-text"><i class="fas fa-chart-pie" aria-hidden="true"></i><span>decisões orientadas a dados</span></div>
           </div>
         </div>
 
@@ -209,36 +227,36 @@
   <!-- ==================== PROJECTS ==================== -->
   <section id="projects" class="section projects-section">
     <div class="container">
-      <div class="section-label reveal">03 — projects</div>
-      <h2 class="section-title reveal">work<em>selected</em></h2>
+      <div class="section-label reveal">03 - projetos</div>
+      <h2 class="section-title reveal">trabalhos<em> selecionados</em></h2>
       <p class="section-sub reveal">
-        projects that demonstrate technical expertise and real business impact.
+        projetos que demonstram expertise técnica e impacto real no negócio.
       </p>
-
+ 
       <div class="projects-grid">
-
+ 
         <!-- Featured -->
         <article class="project-card project-featured reveal">
           <div class="project-meta">
             <span class="project-tag">fullstack · java · javascript</span>
             <span class="project-year">2026</span>
           </div>
-          <h3 class="project-title">pedacinhos de maria - complete restaurant ordering system</h3>
+          <h3 class="project-title">restaurante pedacinhos de maria - sistema completo de pedidos para restaurante</h3>
           <p class="project-desc">
-            a complete ordering and operations system built to solve a real, everyday problem for a small family restaurant: customers had to be told the menu out loud, one by one, every single day, and the kitchen depended entirely on someone physically walking the order over. What started as a qr-code menu grew into a full system with a live kitchen dashboard, staff accounts with role-based access approved by the owner, and real-time order synchronization currently deployed and in use.<div class="project-impact">
-          <span><i class="fas fa-check-circle"></i> qr code digital menu, no login required for customers</span>
-          <span><i class="fas fa-check-circle"></i> real-time kitchen dashboard with live order queue</span>
-          <span><i class="fas fa-check-circle"></i> live order status updates (websocket/stomp)</span>
-          <span><i class="fas fa-check-circle"></i> jwt authentication with role-based access (staff vs. owner)</span>
-          <span><i class="fas fa-check-circle"></i> internal admin panel for approving/rejecting staff accounts</span>
-          <span><i class="fas fa-check-circle"></i> rest api with openapi/swagger documentation</span>
-          <span><i class="fas fa-check-circle"></i> dockerized backend deployment on render</span>
-          <span><i class="fas fa-check-circle"></i> mongodb atlas with ttl-indexed data retention</span>
-          <span><i class="fas fa-check-circle"></i> four independent, framework-free frontends</span>
-          <span><i class="fas fa-check-circle"></i> unit tests with junit5 + mockito</span>
-          <span><i class="fas fa-check-circle"></i> modular, feature-based backend organization (auth, menu, order)</span>
-          <span><i class="fas fa-check-circle"></i> whatsapp cloud api integration for order-ready notifications</span>
-          <span><i class="fas fa-check-circle"></i> centralized, structured exception handling</span>
+            um sistema completo de pedidos e operação criado para resolver um problema real e cotidiano de um pequeno restaurante familiar: os clientes precisavam ouvir o cardápio em voz alta, um por um, todos os dias, e a cozinha dependia de alguém levar o pedido fisicamente até lá. o que começou como um cardápio com qr code virou um sistema completo, com painel de cozinha ao vivo, contas de funcionários com acesso por perfil aprovadas pelo dono e sincronização de pedidos em tempo real, atualmente implantado e em uso.<div class="project-impact">
+          <span><i class="fas fa-check-circle"></i> cardápio digital com qr code, sem necessidade de login para os clientes</span>
+          <span><i class="fas fa-check-circle"></i> painel de cozinha em tempo real com fila de pedidos ao vivo</span>
+          <span><i class="fas fa-check-circle"></i> atualização do status dos pedidos ao vivo (websocket/stomp)</span>
+          <span><i class="fas fa-check-circle"></i> autenticação jwt com controle de acesso por perfil (funcionário vs. dono)</span>
+          <span><i class="fas fa-check-circle"></i> painel administrativo interno para aprovar/rejeitar contas de funcionários</span>
+          <span><i class="fas fa-check-circle"></i> api rest documentada com openapi/swagger</span>
+          <span><i class="fas fa-check-circle"></i> backend dockerizado com deploy na render</span>
+          <span><i class="fas fa-check-circle"></i> mongodb atlas com retenção de dados via índices ttl</span>
+          <span><i class="fas fa-check-circle"></i> quatro frontends independentes, sem frameworks</span>
+          <span><i class="fas fa-check-circle"></i> testes unitários com junit5 + mockito</span>
+          <span><i class="fas fa-check-circle"></i> organização modular do backend por funcionalidade (auth, menu, order)</span>
+          <span><i class="fas fa-check-circle"></i> integração com a whatsapp cloud api para notificações de pedido pronto</span>
+          <span><i class="fas fa-check-circle"></i> tratamento de exceções centralizado e estruturado</span>
           </div>
           <div class="project-tech">
             <span>java</span><span>spring boot</span><span>spring security</span><span>jwt</span><span>spring validation</span><span>docker</span><span>mongodb atlas</span><span>websocket/stomp</span><span>ci/cd</span><span>github actions</span><span>render</span><span>whatsapp cloud api</span><span>javascript</span><span>html</span><span>css</span><span>junit5</span>
@@ -251,26 +269,26 @@
               <i class="fas fa-external-link-alt"></i> demo
             </a>
             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7496344069170888704/" target="_blank" rel="noopener" class="project-link-btn">
-              <i class="fas fa-external-link-alt"></i> explainer video
+              <i class="fas fa-external-link-alt"></i> vídeo explicativo
             </a>
           </div>
         </article>
-
+ 
         <article class="project-card reveal">
           <div class="project-meta">
             <span class="project-tag">backend · java</span>
             <span class="project-year">2026</span>
           </div>
-          <h3 class="project-title">pix simulator - instant payment system</h3>
+          <h3 class="project-title">simulador de pix - sistema de pagamentos instantâneos</h3>
           <p class="project-desc">
-            a pix payment simulator built with java and spring boot, reproducing concepts commonly used in modern financial systems. The project implements jwt authentication, redis-based idempotency, kafka asynchronous processing, and behavior-based fraud detection.
+            um simulador de pagamentos pix construído com java e spring boot, reproduzindo conceitos comuns em sistemas financeiros modernos. o projeto implementa autenticação jwt, idempotência com redis, processamento assíncrono com kafka e detecção de fraude baseada em comportamento.
             <div class="project-impact">
-          <span><i class="fas fa-check-circle"></i> redis-based idempotency to prevent duplicate transactions</span>
-          <span><i class="fas fa-check-circle"></i> asynchronous payment processing with kafka</span>
-          <span><i class="fas fa-check-circle"></i> behavioral fraud detection</span>
-          <span><i class="fas fa-check-circle"></i> secure authentication with jwt and spring security</span>
-          <span><i class="fas fa-check-circle"></i> rest apis documented with swagger/openapi</span>
-          <span><i class="fas fa-check-circle"></i> automated testing and architecture following industry best practices</span>
+          <span><i class="fas fa-check-circle"></i> idempotência com redis para evitar transações duplicadas</span>
+          <span><i class="fas fa-check-circle"></i> processamento assíncrono de pagamentos com kafka</span>
+          <span><i class="fas fa-check-circle"></i> detecção de fraude comportamental</span>
+          <span><i class="fas fa-check-circle"></i> autenticação segura com jwt e spring security</span>
+          <span><i class="fas fa-check-circle"></i> apis rest documentadas com swagger/openapi</span>
+          <span><i class="fas fa-check-circle"></i> testes automatizados e arquitetura seguindo boas práticas do mercado</span>
           </div>
           <div class="project-tech">
             <span>java</span><span>spring boot</span><span>spring security</span><span>jwt</span><span>postgresql</span><span>redis</span><span>apache kafka</span><span>docker</span><span>junit 5</span><span>ci/cd</span>
@@ -281,23 +299,23 @@
             </a>
           </div>
         </article>
-
+ 
         <article class="project-card reveal">
           <div class="project-meta">
             <span class="project-tag">freelance · web</span>
-            <span class="project-year">2025</span>
+            <span class="project-year">2024</span>
           </div>
           <h3 class="project-title">portfólio - personal trainer gabriel venancio</h3>
           <p class="project-desc">
-            professional website for a physical education specialist with postgraduate studies in biomechanics and sports nutrition. Showcases services, expertise, and professional background through an engaging user experience.</p>
+            site profissional para um especialista em educação física com pós-graduação em biomecânica e nutrição esportiva. apresenta serviços, expertise e trajetória profissional por meio de uma experiência envolvente.</p>
             <div class="project-impact">
-          <span><i class="fas fa-check-circle"></i> client-side interactions and navigation</span>
-          <span><i class="fas fa-check-circle"></i> optimized visual presentation and lightweight frontend architecture</span>
-          <span><i class="fas fa-check-circle"></i> services section with detailed offerings and feature highlights</span>
-          <span><i class="fas fa-check-circle"></i> contact section with whatsApp, email, location, and business hours</span>
-          <span><i class="fas fa-check-circle"></i> image-based sections for personal branding and service presentation</span>
-          <span><i class="fas fa-check-circle"></i> mobile-first responsive behavior across different screen sizes</span>
-          <span><i class="fas fa-check-circle"></i> deployed as a production-ready web application</span>
+          <span><i class="fas fa-check-circle"></i> interações e navegação no lado do cliente</span>
+          <span><i class="fas fa-check-circle"></i> apresentação visual otimizada e arquitetura de frontend leve</span>
+          <span><i class="fas fa-check-circle"></i> seção de serviços com ofertas detalhadas e destaques de recursos</span>
+          <span><i class="fas fa-check-circle"></i> seção de contato com whatsapp, e-mail, localização e horário de atendimento</span>
+          <span><i class="fas fa-check-circle"></i> seções com imagens para branding pessoal e apresentação dos serviços</span>
+          <span><i class="fas fa-check-circle"></i> comportamento responsivo mobile-first em diferentes tamanhos de tela</span>
+          <span><i class="fas fa-check-circle"></i> publicado como aplicação web pronta para produção</span>
           </div>
           <div class="project-tech">
             <span>html</span><span>css</span><span>javascript</span>
@@ -311,23 +329,23 @@
             </a>
           </div>
         </article>
-
+ 
         <article class="project-card reveal">
           <div class="project-meta">
             <span class="project-tag">freelance · web</span>
-            <span class="project-year">2025</span>
+            <span class="project-year">2023</span>
           </div>
-          <h3 class="project-title">inside football - sports agent</h3>
+          <h3 class="project-title">inside football - agente esportivo</h3>
           <p class="project-desc">
-            a professional institutional website developed for a football sports agent, designed to strengthen his digital presence, showcase his career and professional services, and create a direct communication channel with athletes, clubs, agents, and business partners.</p>
+            um site institucional profissional desenvolvido para um agente esportivo de futebol, criado para fortalecer sua presença digital, apresentar sua carreira e serviços profissionais e criar um canal direto de comunicação com atletas, clubes, agentes e parceiros de negócio.</p>
           <div class="project-impact">
-          <span><i class="fas fa-check-circle"></i> athlete profiles displaying player image, position, age, and current club</span>
-          <span><i class="fas fa-check-circle"></i> ensure accessibility across desktop, tablet, and mobile devices</span>
-          <span><i class="fas fa-check-circle"></i> present the services offered to professional and youth athletes</span>
-          <span><i class="fas fa-check-circle"></i> create a modern experience aligned with the professional football industry</span>
-          <span><i class="fas fa-check-circle"></i> athlete roster with individual athlete cards</span>
-          <span><i class="fas fa-check-circle"></i> career management</span>
-          <span><i class="fas fa-check-circle"></i> facilitate communication with athletes, clubs, and business partners</span>
+          <span><i class="fas fa-check-circle"></i> perfis de atletas exibindo foto, posição, idade e clube atual</span>
+          <span><i class="fas fa-check-circle"></i> garantir acessibilidade em desktop, tablet e dispositivos móveis</span>
+          <span><i class="fas fa-check-circle"></i> apresentar os serviços oferecidos a atletas profissionais e da base</span>
+          <span><i class="fas fa-check-circle"></i> criar uma experiência moderna alinhada ao mercado do futebol profissional</span>
+          <span><i class="fas fa-check-circle"></i> elenco de atletas com cards individuais</span>
+          <span><i class="fas fa-check-circle"></i> gestão de carreira</span>
+          <span><i class="fas fa-check-circle"></i> facilitar a comunicação com atletas, clubes e parceiros de negócio</span>
           </div>
           <div class="project-tech">
             <span>html</span><span>css</span><span>javascript</span>
@@ -341,45 +359,45 @@
             </a>
           </div>
         </article>
-
+ 
       </div>
-
+ 
       <div class="projects-cta reveal">
         <a href="https://github.com/GuilhermeDoSantoss" target="_blank" rel="noopener" class="btn btn-ghost">
-          view all projects on github <i class="fab fa-github"></i>
+          ver todos os projetos no github <i class="fab fa-github"></i>
         </a>
       </div>
     </div>
   </section>
-
+ 
   <!-- ==================== CONTACT ==================== -->
   <section id="contact" class="section contact-section">
     <div class="container">
       <div class="contact-inner">
-        <div class="section-label reveal">04 — contact</div>
+        <div class="section-label reveal">04 - contato</div>
         <h2 class="contact-title reveal">
-          let's build<br/><em>something together?</em>
+          vamos construir<br/><em>algo juntos?</em>
         </h2>
         <p class="contact-sub reveal">
-          open to backend, full-stack, and software architecture opportunities. I usually respond within 24 hours.
+          aberto a oportunidades em backend java, engenharia de produto e arquitetura de software, costumo responder em até 12 horas.
         </p>
         <div class="contact-options reveal">
           <a href="mailto:guilherme.devsoft@gmail.com" class="contact-card">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
             <div>
-              <strong>email</strong>
+              <strong>e-mail</strong>
               <span>guilherme.devsoft@gmail.com</span>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener" class="contact-card">
-            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
             <div>
               <strong>linkedin</strong>
               <span>guilhermedevjava</span>
             </div>
           </a>
           <a href="https://github.com/GuilhermeDoSantoss" target="_blank" rel="noopener" class="contact-card">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github" aria-hidden="true"></i>
             <div>
               <strong>github</strong>
               <span>guilhermedosantoss</span>
@@ -388,7 +406,7 @@
         </div>
         <div class="contact-whatsapp reveal">
           <button class="btn btn-primary btn-lg" onclick="openWhatsApp()">
-            <i class="fab fa-whatsapp"></i> start a whatsApp conversation
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> iniciar conversa no whatsapp
           </button>
         </div>
       </div>
@@ -400,20 +418,20 @@
     <div class="container">
       <div class="footer-inner">
         <span class="footer-logo">guilherme dos santos<span class="accent">.</span></span>
-        <p>© 2025 guilherme dos santos - software engineer</p>
+        <p>© 2026 guilherme dos santos - engenheiro de software</p>
         <div class="footer-links">
-          <a href="https://github.com/GuilhermeDoSantoss" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/GuilhermeDoSantoss" target="_blank" rel="noopener" aria-label="github"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/guilhermedevjava/" target="_blank" rel="noopener" aria-label="linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- WhatsApp FAB -->
-  <button class="whatsapp-fab" onclick="openWhatsApp()" aria-label="Abrir WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+  <button class="whatsapp-fab" onclick="openWhatsApp()" aria-label="abrir conversa no whatsapp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
     <span class="fab-pulse"></span>
-    <span class="fab-tooltip">let's talk!</span>
+    <span class="fab-tooltip">vamos conversar!</span>
   </button>
 
   <script src="script.js"></script>

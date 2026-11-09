@@ -1,6 +1,6 @@
 /* ==========================================
    GUILHERME DOS SANTOS — PORTFOLIO CSS
-   Design: Dark editorial, Syne + DM Sans
+   Design: Dark midnight editorial, Plus Jakarta Sans + Inter + JetBrains Mono
    ========================================== */
 
 /* === RESET & BASE === */
@@ -11,19 +11,22 @@
 }
 
 :root {
-  --bg:         #0a0a0c;
-  --bg-2:       #111114;
-  --bg-3:       #18181d;
-  --border:     rgba(255,255,255,0.07);
-  --border-md:  rgba(255,255,255,0.12);
-  --text:       #e8e8f0;
-  --text-muted: #7a7a90;
-  --accent:     #6cffb2;        /* electric mint */
-  --accent-dim: rgba(108,255,178,0.12);
-  --accent-glow:rgba(108,255,178,0.25);
+  --bg:         #080b14;        /* midnight */
+  --bg-2:       #0d1220;
+  --bg-3:       #131a2b;
+  --border:     rgba(148,163,200,0.10);
+  --border-md:  rgba(148,163,200,0.18);
+  --text:       #e6eaf5;
+  --text-muted: #8a93ab;
+  --accent:     #34e8b0;        /* aurora mint */
+  --accent-2:   #7aa2ff;        /* sky indigo */
+  --accent-dim: rgba(52,232,176,0.12);
+  --accent-glow:rgba(52,232,176,0.28);
+  --gradient:   linear-gradient(135deg, #34e8b0 0%, #5fd0e8 55%, #7aa2ff 100%);
   --white:      #ffffff;
-  --font-display: 'Syne', sans-serif;
-  --font-body:    'DM Sans', sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --radius:     12px;
   --radius-lg:  20px;
   --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
@@ -118,7 +121,7 @@ ul { list-style: none; }
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: var(--gradient);
   color: var(--bg);
 }
 .btn-primary:hover {
@@ -151,7 +154,7 @@ ul { list-style: none; }
 }
 
 .site-header.scrolled {
-  background: rgba(10,10,12,0.92);
+  background: rgba(8,11,20,0.88);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(16px);
 }
@@ -201,7 +204,7 @@ ul { list-style: none; }
 .nav-cta {
   padding: 9px 20px;
   border-radius: 8px;
-  background: var(--accent);
+  background: var(--gradient);
   color: var(--bg);
   font-family: var(--font-display);
   font-weight: 700;
@@ -243,8 +246,8 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(108,255,178,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(108,255,178,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(52,232,176,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(52,232,176,0.04) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 80% 80% at 50% 40%, black 30%, transparent 100%);
 }
@@ -264,7 +267,9 @@ ul { list-style: none; }
   top: -20%; left: 50%;
   transform: translateX(-50%);
   width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(108,255,178,0.06) 0%, transparent 70%);
+  background:
+    radial-gradient(circle at 35% 45%, rgba(52,232,176,0.09) 0%, transparent 60%),
+    radial-gradient(circle at 68% 55%, rgba(122,162,255,0.09) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -285,8 +290,8 @@ ul { list-style: none; }
   gap: 8px;
   padding: 6px 16px;
   border-radius: 100px;
-  border: 1px solid rgba(108,255,178,0.3);
-  background: rgba(108,255,178,0.06);
+  border: 1px solid rgba(52,232,176,0.3);
+  background: rgba(52,232,176,0.06);
   font-size: 0.8rem;
   color: var(--accent);
   letter-spacing: 0.04em;
@@ -313,8 +318,12 @@ ul { list-style: none; }
 }
 
 .hero-title em {
-  font-style: italic;
   font-weight: 700;
+  font-style: italic;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: var(--accent);
 }
 
@@ -539,12 +548,13 @@ ul { list-style: none; }
   border-radius: 8px;
   background: var(--bg-3);
   border: 1px solid var(--border);
-  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
   color: var(--text);
   transition: border-color var(--transition), color var(--transition);
 }
 .stack-item:hover {
-  border-color: rgba(108,255,178,0.3);
+  border-color: rgba(52,232,176,0.3);
   color: var(--accent);
 }
 .stack-item img {
@@ -599,8 +609,8 @@ ul { list-style: none; }
 
 .project-featured {
   grid-column: 1 / -1;
-  background: linear-gradient(135deg, var(--bg-3), rgba(108,255,178,0.03));
-  border-color: rgba(108,255,178,0.15);
+  background: linear-gradient(135deg, var(--bg-3), rgba(52,232,176,0.03));
+  border-color: rgba(52,232,176,0.15);
 }
 .project-featured::before { opacity: 1; }
 
@@ -681,7 +691,7 @@ ul { list-style: none; }
   font-weight: 600;
   color: var(--accent);
   padding: 7px 14px;
-  border: 1px solid rgba(108,255,178,0.3);
+  border: 1px solid rgba(52,232,176,0.3);
   border-radius: 8px;
   transition: var(--transition);
 }
@@ -710,7 +720,9 @@ ul { list-style: none; }
   bottom: 0; left: 50%;
   transform: translateX(-50%);
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(108,255,178,0.05) 0%, transparent 70%);
+  background:
+    radial-gradient(circle at 40% 50%, rgba(52,232,176,0.07) 0%, transparent 60%),
+    radial-gradient(circle at 65% 50%, rgba(122,162,255,0.07) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -733,6 +745,10 @@ ul { list-style: none; }
 }
 .contact-title em {
   font-style: italic;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: var(--accent);
 }
 
@@ -761,7 +777,7 @@ ul { list-style: none; }
   transition: var(--transition);
 }
 .contact-card:hover {
-  border-color: rgba(108,255,178,0.3);
+  border-color: rgba(52,232,176,0.3);
   transform: translateX(4px);
 }
 .contact-card i {
